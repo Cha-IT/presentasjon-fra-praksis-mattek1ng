@@ -13,7 +13,7 @@ import customTheme from './components/customTheme';
 
 function App() {
   return (
-    <Deck theme={customTheme}  transitionEffect="fade" transitionDuration={500}>
+    <Deck theme={customTheme} template={DefaultTemplate} transitionEffect="fade" transitionDuration={500}>
 
 
       
