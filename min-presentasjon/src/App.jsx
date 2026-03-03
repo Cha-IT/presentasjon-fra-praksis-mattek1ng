@@ -10,9 +10,10 @@ import bilder2 from './assets/bilder2.png';
 import customTheme from './components/customTheme';
 
 
+
 function App() {
   return (
-    <Deck theme={customTheme} template={DefaultTemplate} transitionEffect="fade" transitionDuration={500}>
+    <Deck theme={customTheme}  transitionEffect="fade" transitionDuration={500}>
 
 
       
@@ -142,7 +143,28 @@ function App() {
 </Grid>
 </Slide>
 
-
+  <Slide>
+      <Grid gridTemplateColumns="1fr 1fr" gridColumnGap={15}>
+  <Box backgroundColor="#09637E" padding={10}>
+    <Heading>Refleksjon</Heading>
+    <UnorderedList>
+      <Appear>
+        <ListItem>Innholdsrikt</ListItem>
+      </Appear>
+      <Appear>
+        <ListItem>Miljø</ListItem>
+      </Appear>
+      <Appear>
+        <ListItem>Mine tanker</ListItem>
+      </Appear>
+    </UnorderedList>
+  </Box>
+     <Box backgroundColor="#09637E" padding={10}>
+  
+  </Box>
+     </Grid>
+    </Slide>
+    
     </Deck>
   );
 }
